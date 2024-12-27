@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background-color: #00142F;
             color: #fff;
         }
 
@@ -42,7 +42,7 @@
         .menu-icon div {
             width: 25px;
             height: 3px;
-            background-color: #ff5722;
+            background-color: #FF3100;
             margin: 5px 0;
         }
 
@@ -54,7 +54,7 @@
         }
 
         .user-info span {
-            color: #FF7A00;
+            color: #FF3100;
             font-size: 1.2rem;
             font-weight: bold;
         }
@@ -63,7 +63,7 @@
             max-width: 50px;
             cursor: pointer;
             border-radius: 50%;
-            border: 2px solid #ff5722;
+            border: 2px solid #FF3100;
         }
 
         /* Menu */
@@ -73,7 +73,7 @@
             left: -100%; /* Inicialmente escondido */
             height: 100%; /* Preencher altura total */
             width: 300px; /* Largura do menu */
-            background-color: #ff5722;
+            background-color: #FF3100;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.7);
             z-index: 20; /* Na frente do cabeçalho */
@@ -107,7 +107,7 @@
 
         .menu .back-button {
             background-color: #fff;
-            color: #ff5722;
+            color: #FF3100;
             padding: 10px 20px;
             text-align: center;
             border-radius: 5px;
@@ -117,7 +117,7 @@
         }
 
         .menu .back-button:hover {
-            background-color: #ff8800;
+            background-color: #FF3100;
             color: #fff;
         }
 
@@ -146,14 +146,14 @@
 
         /* Módulo */
         .module {
-            background-color: #ff5722;
+            background-color: #FF3100;
             padding: 20px;
             margin: 20px 0;
             width: 80%;
             max-width: 600px;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 0 15px rgba(255, 136, 0, 0.8);
+            box-shadow: 0 0 15px rgba(255, 49, 0, 0.8);
             animation: fadeIn 1s ease-out;
             cursor: pointer;
         }
@@ -163,7 +163,7 @@
         }
 
         .module button {
-            background-color: #ff5722;
+            background-color: #FF3100;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -210,7 +210,7 @@
         <div></div>
         <div></div>
     </div>
-    <img src="Logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Logo" class="logo">
     <div class="user-info">
         <span>R$ 00,00</span>
         <img src="Icone.png" alt="Ícone do Usuário">
@@ -225,7 +225,8 @@
     <a href="rendimento.html">
         <img src="rendimento.png" alt="Rendimento"> Ver Rendimento
     </a>
-    <a href="configurações.html">
+    <a 
+        <a href="configurações.html">
         <img src="configurações.png" alt="Configurações"> Configurações
     </a>
     <a href="ajuda.html">
@@ -238,9 +239,13 @@
         <img src="Sair.png" alt="Sair"> Sair
     </a>
 </nav>
-
 <section>
-    <div class="banner">Cumpra Missões!</div>
+    <!-- Centraliza a imagem com deslocamento para a direita -->
+    <div style="display: flex; justify-content: flex-start; align-items: center; height: 250px; padding-left: 10%;">
+        <img src="nome.png" 
+             alt="Banner" 
+             style="max-width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+    </div>
 
     <div class="module" onclick="window.location.href='shopee.html'">
         <h2>Ganhe com Shopee</h2>
@@ -256,16 +261,12 @@
 
     <div class="module">
         <h2>Ganhe com Mercado Livre</h2>
-        <p>Venda produtos de forma eficiente e ganhe com cada 
-venda realizada na plataforma.</p>
+        <p>Venda produtos de forma eficiente e ganhe com cada venda realizada na plataforma.</p>
         <button>Saiba Mais</button>
     </div>
-
-    <img src="P.png" 
-         alt="Postagem" 
-         style="width: 100%; max-width: 88000px; margin-top: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); object-fit: contain; display: block;">
-
 </section>
+
+
 
 <script>
     function toggleMenu() {
